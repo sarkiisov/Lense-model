@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+}
+
+.lense-canvas {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    width: 1200px;
+    height: 600px;
+}
+
+.lense-control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    .lense-control-panel-inner {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, select {
+    margin: 5px 0px 15px 0px;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+select {
+    width: 103%;
+}
+
+option {
+    zoom: 1.1;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lenses model</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="lense-canvas">
+            <canvas id="converging-lense">
+                <img src="./media/images/candle.png" alt="lense-object" id="lense-object" width="189" height="267">
+                <img src="./media/images/candleInverted.png" alt="lense-object" id="lense-object-inverted" width="189" height="267">
+            </canvas>
+        </div>
+        <div class="lense-control-panel">
+            <div class="lense-control-panel-inner">
+                <label for="lense-object-scale">Тип линзы</label>
+                <select name="lense-mode" id="lense-type-select">
+                    <option value="converging">Собирающая</option>
+                    <option value="diverging">Рассеивающая</option>
+                </select>
+                <label for="lense-object-scale">Размер объекта [0-1]</label>
+                <input type="number" id="lense-object-scale" name="lense-object-scale" value="0.3" step="0.1" min="0.1">
+                <label for="lense-object-distanсe">Расстояние от объекта до линзы [0-300]</label>
+                <input type="number" id="lense-toggler" name="lense-object-distanсe" value="50" step="10">
+                <label for="lense-object-distanсe">Фокусное расстояние [50-300]</label>
+                <input type="number" id="lense-focal-lenght" name="lense-focal-lenght" value="150" step="10" min="50">
+            </div>
+        </div>
+    </div>
+    <script src="./script/canvas.js"></script>
+</body>
+</html>
